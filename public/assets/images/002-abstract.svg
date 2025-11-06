@@ -1,0 +1,28 @@
+<svg width="140" height="136" viewBox="0 0 140 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.3">
+    <!-- Abstract circular patterns -->
+    <circle cx="70" cy="68" r="45" stroke="white" stroke-width="2" fill="none" opacity="0.4"/>
+    <circle cx="70" cy="68" r="35" stroke="white" stroke-width="1.5" fill="none" opacity="0.3"/>
+    <circle cx="70" cy="68" r="25" stroke="white" stroke-width="1" fill="none" opacity="0.25"/>
+
+    <!-- Decorative dots -->
+    <circle cx="25" cy="30" r="3" fill="white" opacity="0.5"/>
+    <circle cx="115" cy="45" r="2.5" fill="white" opacity="0.4"/>
+    <circle cx="35" cy="105" r="2" fill="white" opacity="0.45"/>
+    <circle cx="105" cy="115" r="3.5" fill="white" opacity="0.35"/>
+
+    <!-- Abstract curved lines -->
+    <path d="M20 20 Q50 50 80 30" stroke="white" stroke-width="1.5" fill="none" opacity="0.3"/>
+    <path d="M60 10 Q90 40 120 25" stroke="white" stroke-width="1" fill="none" opacity="0.25"/>
+    <path d="M10 70 Q40 95 70 110" stroke="white" stroke-width="1.5" fill="none" opacity="0.3"/>
+
+    <!-- Geometric shapes -->
+    <rect x="90" y="80" width="30" height="30" stroke="white" stroke-width="1" fill="none" opacity="0.25" transform="rotate(15 105 95)"/>
+    <polygon points="30,120 45,135 15,135" stroke="white" stroke-width="1" fill="none" opacity="0.3"/>
+
+    <!-- Additional decorative elements -->
+    <circle cx="50" cy="20" r="1.5" fill="white" opacity="0.6"/>
+    <circle cx="95" cy="60" r="2" fill="white" opacity="0.4"/>
+    <circle cx="20" cy="90" r="1.5" fill="white" opacity="0.5"/>
+  </g>
+</svg>

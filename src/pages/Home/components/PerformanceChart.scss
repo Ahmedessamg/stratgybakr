@@ -1,0 +1,19 @@
+.performance-chart {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  height: 100%;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 20px;
+  }
+
+  &__container {
+    height: 300px;
+  }
+}
+

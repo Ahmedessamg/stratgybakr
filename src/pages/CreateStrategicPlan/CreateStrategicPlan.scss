@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.create-strategic-plan {
+  &__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-lg;
+
+    @media (max-width: $desktop) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    
+    @media (max-width: $desktop) {
+      order: 2;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+    
+    @media (max-width: $desktop) {
+      order: 1;
+    }
+  }
+}
+

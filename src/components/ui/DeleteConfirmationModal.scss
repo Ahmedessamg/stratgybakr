@@ -1,0 +1,29 @@
+@use "sass:color";
+
+.delete-confirmation-modal {
+  padding: 10px 0;
+
+  &__message {
+    font-size: 14px;
+    color: #666666;
+    margin: 0 0 25px 0;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+
+  &__delete-btn {
+    background-color: var(--danger) !important;
+    border-color: var(--danger) !important;
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+}

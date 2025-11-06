@@ -1,0 +1,23 @@
+.empty-state {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  color: var(--muted);
+  
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 0.875rem;
+    text-align: center;
+    color: var(--text);
+    font-weight: 500;
+    margin: 0;
+  }
+}

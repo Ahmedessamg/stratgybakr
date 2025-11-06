@@ -1,0 +1,64 @@
+@import "../../../../styles/variables";
+
+.vision-mission-section {
+  background: #ffffff;
+  border: 1px solid #f1f1f2;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+
+  &__item {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 0;
+    align-items: stretch;
+    border-bottom: 1px solid #f1f1f2;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__label {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.21;
+    text-transform: uppercase;
+    color: #757575;
+    padding: 10px 20px;
+    display: flex;
+    align-items: flex-start;
+    border-right: 1px solid #f1f1f2;
+    background: #ffffff;
+
+    [dir="rtl"] & {
+      border-right: none;
+      border-left: 1px solid #f1f1f2;
+    }
+
+    @media (max-width: 768px) {
+      border-right: none;
+      border-left: none;
+      border-bottom: 1px solid #f1f1f2;
+    }
+  }
+
+  &__content {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.92;
+    text-transform: uppercase;
+    color: #000919;
+    padding: 10px 20px;
+    white-space: pre-wrap;
+    word-break: break-word;
+
+    @media (max-width: 768px) {
+      border-top: none;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.create-strategy {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  
+  // Match header container width
+  .card-content {
+    max-width: 100%;
+  }
+
+  // Action Buttons
+  .strategy-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    position: sticky;
+    bottom: 1rem;
+    z-index: 10;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+
+    button {
+      min-width: 150px;
+    }
+  }
+}

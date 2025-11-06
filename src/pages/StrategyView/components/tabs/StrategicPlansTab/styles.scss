@@ -1,0 +1,276 @@
+@import "../../../../../styles/variables";
+
+.strategic-plans-tab {
+  width: 100%;
+}
+
+.strategic-plans-table {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  border-block: 1px solid #eaeaea;
+
+  &__header {
+    display: grid;
+    grid-template-columns: 1fr 180px 200px 230px;
+    gap: 20px;
+    padding: 15px 20px;
+    background: var(--bg);
+    border-bottom: 1px dashed #eaeaea;
+  }
+
+  &__header-cell {
+    font-size: 12px;
+    font-weight: 500;
+    color: #000919;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-transform: capitalize;
+
+    &--goal {
+      justify-content: flex-start;
+    }
+
+    &--owner {
+      justify-content: flex-start;
+    }
+
+    &--date {
+      justify-content: flex-start;
+    }
+
+    &--progress {
+      justify-content: flex-start;
+    }
+  }
+
+  &__body {
+    background: var(--bg);
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 180px 200px 230px;
+    gap: 20px;
+    padding: 17px 20px 18px;
+    background: var(--bg);
+    border-bottom: 1px dashed #eaeaea;
+    align-items: center;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background: var(--card);
+    }
+  }
+
+  &__cell {
+    display: flex;
+    align-items: center;
+
+    &--goal {
+      justify-content: flex-start;
+    }
+
+    &--owner {
+      justify-content: flex-start;
+    }
+
+    &--date {
+      justify-content: flex-start;
+    }
+
+    &--progress {
+      justify-content: flex-end;
+    }
+  }
+}
+
+// Goal Name Component
+.goal-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  // flex-direction: row-reverse;
+
+  &__icon {
+    flex-shrink: 0;
+  }
+
+  &__text {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000919;
+    text-align: right;
+    line-height: 1.58;
+  }
+}
+
+// Owner Component
+.owner {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-direction: row-reverse;
+
+  &__name {
+    font-size: 12px;
+    font-weight: 400;
+    color: #757575;
+    text-align: right;
+  }
+
+  &__avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 100px;
+    object-fit: cover;
+  }
+}
+
+// Target Date Component
+.target-date {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+
+  &__quarter {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+    text-align: right;
+  }
+
+  &__range {
+    font-size: 10px;
+    font-weight: 400;
+    color: #757575;
+    text-align: right;
+  }
+}
+
+// RTL Support
+[dir="rtl"] {
+  .strategic-plans-table {
+    &__header-cell {
+      text-align: right;
+      justify-content: flex-start;
+    }
+
+    &__cell {
+      &--goal {
+        justify-content: flex-start;
+      }
+
+      &--owner {
+        justify-content: flex-start;
+      }
+
+      &--date {
+        justify-content: flex-start;
+      }
+
+      &--progress {
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .goal-name {
+    // flex-direction: row-reverse;
+
+    &__text {
+      text-align: right;
+    }
+  }
+
+  .owner {
+    flex-direction: row-reverse;
+
+    &__name {
+      text-align: right;
+    }
+  }
+
+  .target-date {
+    align-items: flex-start;
+
+    &__quarter,
+    &__range {
+      text-align: right;
+    }
+  }
+}
+
+// LTR Support
+[dir="ltr"] {
+  .strategic-plans-table {
+    &__header-cell {
+      text-align: left;
+
+      &--goal {
+        justify-content: flex-start;
+      }
+
+      &--owner {
+        justify-content: flex-start;
+      }
+
+      &--date {
+        justify-content: flex-start;
+      }
+
+      &--progress {
+        justify-content: flex-end;
+      }
+    }
+
+    &__cell {
+      &--goal {
+        justify-content: flex-start;
+      }
+
+      &--owner {
+        justify-content: flex-start;
+      }
+
+      &--date {
+        justify-content: flex-start;
+      }
+
+      &--progress {
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .goal-name {
+    flex-direction: row;
+
+    &__text {
+      text-align: left;
+    }
+  }
+
+  .owner {
+    flex-direction: row;
+
+    &__name {
+      text-align: left;
+    }
+  }
+
+  .target-date {
+    align-items: flex-start;
+
+    &__quarter,
+    &__range {
+      text-align: left;
+    }
+  }
+}

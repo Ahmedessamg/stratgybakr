@@ -1,0 +1,43 @@
+.header-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  &__icon-box {
+    background: #f7f7f9;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
+    border-radius: 4.75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    svg {
+      color: #6c757d;
+      flex-shrink: 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__label {
+    font-size: 11px;
+    font-weight: 400;
+    color: #9f9f9f;
+    line-height: 14px;
+  }
+
+  &__value {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000919;
+    line-height: normal;
+  }
+}

@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+
+.strategy-list {
+  
+  &__filter {
+    margin-bottom: $spacing-xl;
+  }
+  
+  &__content {
+    margin-top: $spacing-lg;
+  }
+  
+  &__grid {
+    @apply grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5;
+  }
+  
+  &__delete-modal {
+    padding: $spacing-md 0;
+  }
+  
+  &__delete-message {
+    color: var(--text);
+    font-size: $text-base;
+    line-height: 1.6;
+    margin-bottom: $spacing-xl;
+  }
+  
+  &__delete-actions {
+    display: flex;
+    gap: $spacing-md;
+    justify-content: flex-end;
+    
+    @media (max-width: $mobile) {
+      flex-direction: column-reverse;
+    }
+  }
+  
+  &__delete-btn {
+    background: var(--danger) !important;
+    
+    &:hover {
+      background: #dc2626 !important;
+    }
+  }
+}

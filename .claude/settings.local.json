@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "Bash(npm install:*)",
+      "WebFetch(domain:www.figma.com)",
+      "mcp__figma-remote-mcp__get_screenshot",
+      "mcp__figma-remote-mcp__get_code",
+      "Bash(cp:*)",
+      "Bash(npm run svgr:*)",
+      "Bash(npm run build:*)",
+      "Bash(for file in calendar.tsx document-text.tsx global.tsx message.tsx notification.tsx plan.tsx search.tsx)",
+      "Bash(do sed -i '1d' \"$file\")",
+      "Bash(done)",
+      "Bash(npx vite:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "Bash(npm run preview:*)",
+      "mcp__figma-remote-mcp__get_metadata"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "outputStyle": "default"
+}

@@ -1,0 +1,133 @@
+@import "../../../styles/variables";
+
+.pagination-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 515px;
+  margin-top: 17px;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination-label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.21;
+  text-align: center;
+  color: #83808e;
+}
+
+.pagination-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 15px;
+  width: 80px;
+  height: 35px;
+  background: #ffffff;
+  border: 1px solid #f1f1f2;
+  border-radius: 8px;
+  cursor: pointer;
+
+  select {
+    border: none;
+    background: transparent;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.21;
+    text-align: center;
+    color: #0d0d0d;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+  }
+
+  span {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.21;
+    text-align: center;
+    color: #0d0d0d;
+  }
+
+  svg {
+    color: #757575;
+    transform: rotate(-90deg);
+  }
+
+  &:hover {
+    border-color: #e0e0e0;
+  }
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38.89px;
+    height: 35px;
+    padding: 10.94px;
+    background: #ffffff;
+    border: 0.875px solid #f1f1f2;
+    border-radius: 7.78px;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.21;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover:not(:disabled):not(&--active) {
+      background: #f9f9f9;
+      border-color: #e0e0e0;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &--active {
+      background: #00665e;
+      border-color: #00665e;
+      color: #ffffff;
+    }
+
+    &--dots {
+      border: none;
+      cursor: default;
+      font-size: 14.22px;
+      line-height: 1.21;
+
+      &:hover {
+        background: #ffffff;
+      }
+    }
+
+    &--prev,
+    &--next {
+      svg {
+        color: #000000;
+      }
+    }
+
+    &--prev {
+      [dir="rtl"] & {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

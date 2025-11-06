@@ -1,0 +1,141 @@
+.operational-goals-tab {
+  background: #ffffff;
+  border: 1px solid #f1f1f2;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &__header {
+    padding: 32px 21px 20px;
+  }
+
+  &__title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000919;
+    text-align: right;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  &__count {
+    color: #9f9f9f;
+    margin-inline-start: 4px;
+  }
+
+  &__content {
+    padding: 0 21px 21px;
+  }
+
+  &__bulk-actions {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__bulk-delete-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+
+    &:hover:not(:disabled) {
+      background: #c82333;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+
+  &__bulk-delete-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  &__bulk-delete-text {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &__empty {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  &__empty-text {
+    color: #9f9f9f;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  &__add-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    width: 100%;
+    height: 35px;
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0 9px;
+    transition: background-color 0.2s ease;
+
+    &:hover:not(:disabled) {
+      background-color: rgba(0, 102, 94, 0.05);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    &-text {
+      font-size: 12px;
+      font-weight: 500;
+      color: #00665e;
+      text-transform: capitalize;
+    }
+
+    &-icon {
+      width: 15px;
+      height: 15px;
+      color: #00665e;
+    }
+  }
+}
+
+.operational-goals-list {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+// RTL Support
+[dir="rtl"] {
+  .operational-goals-tab__title {
+    text-align: right;
+  }
+}
+
+// LTR Support
+[dir="ltr"] {
+  .operational-goals-tab__title {
+    text-align: left;
+  }
+
+  .operational-goals-tab__add-btn {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,138 @@
+.add-goal-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    &--half {
+      flex: 1;
+      min-width: 0;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 11px;
+  }
+
+  &__label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+    text-align: right;
+
+    [dir="ltr"] & {
+      text-align: left;
+    }
+  }
+
+  &__toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-control {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-label {
+      font-size: 13px;
+      color: #9f9f9f;
+    }
+  }
+
+  &__switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 30px;
+    cursor: pointer;
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+
+      &:checked + .add-goal-modal__slider {
+        background-color: #85af9a;
+
+        &:before {
+          transform: translateX(12px);
+
+          [dir="ltr"] & {
+            transform: translateX(-12px);
+          }
+        }
+      }
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: 0.3s;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 22px;
+      width: 22px;
+      right: 4px;
+      bottom: 4px;
+      background-color: white;
+      border-radius: 50%;
+      transition: 0.3s;
+
+      [dir="ltr"] & {
+        right: auto;
+        left: 4px;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+
+    button {
+      flex: 1;
+      height: 45px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  &__submit {
+    background-color: #00665e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    &:hover:not(:disabled) {
+      background-color: #005550;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+}

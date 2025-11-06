@@ -1,0 +1,94 @@
+@import "../../../../styles/variables";
+
+.strategic-plan-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #f1f1f2;
+  background-color: var(--bg);
+  padding: 12px 15px;
+  border-radius: 8px;
+  height: 64px;
+
+  select {
+    color: #727975;
+    font-size: 13px;
+  }
+
+  @media (max-width: $desktop) {
+    height: auto;
+    flex-direction: column-reverse;
+    gap: $spacing-lg;
+  }
+
+  &__left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    @media (max-width: $desktop) {
+      width: 100%;
+    }
+  }
+
+  &__filter-group {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__department {
+    width: 150px;
+    flex-shrink: 0;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+
+  &__owner {
+    width: 150px;
+    flex-shrink: 0;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    @media (max-width: $desktop) {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    color: #727975;
+    white-space: nowrap;
+  }
+
+  &__period-select {
+    width: 150px;
+    flex-shrink: 0;
+
+    select {
+      color: #727975;
+      font-size: 13px;
+    }
+  }
+}
+

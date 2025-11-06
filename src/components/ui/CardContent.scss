@@ -1,0 +1,101 @@
+.card-content {
+  background: #ffffff;
+  border-radius: 5px;
+box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.03);
+border: 1px solid var(--Stroke, #F1F1F2);
+  margin-bottom: 8px;
+  overflow: hidden;
+
+  &__header {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    padding: 8px 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-bottom: 1px solid #f1f5f9;
+
+    &:hover {
+      background-color: #f8fafc;
+    }
+  }
+
+  &__header-left {
+    margin-left: 12px;
+  }
+
+  &__header-right {
+    display: flex;
+    align-items: center;
+    flex: 1 !important;
+    gap: 12px;
+  }
+
+  &__toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #64748b;
+    padding: 4px;
+    border-radius: 4px;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #16a34a;
+    }
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+ 
+    svg {
+      width: 20px;
+      height: 20px;
+      color: #16a34a;
+    }
+  }
+
+  &__text {
+    flex: 1;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0 0 4px 0;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    color: #64748b;
+    margin: 0;
+  }
+
+  &__body {
+    padding: 20px;
+  }
+}
+
+// RTL Support
+[dir="rtl"] {
+  .card-content {
+    &__header-left {
+      margin-left: 0;
+      margin-right: 12px;
+    }
+
+    &__icon {
+      margin-left: 0;
+      margin-right: 12px;
+    }
+  }
+}

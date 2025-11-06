@@ -1,0 +1,95 @@
+@import "../../../../styles/variables";
+
+.strategy-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #f1f1f2;
+  background-color: var(--bg);
+  padding: 12px 15px;
+  border-radius: 8px;
+  height: 64px;
+
+  select {
+    color: #727975;
+    font-size: 13px;
+  }
+
+  @media (max-width: $desktop) {
+    height: auto;
+    flex-direction: column-reverse;
+    gap: $spacing-lg;
+  }
+
+  // Left side - Search controls (Name dropdown + Search input)
+  &__left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    @media (max-width: $desktop) {
+      width: 100%;
+    }
+  }
+
+  &__search-group {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__search-by {
+    width: 94px;
+    flex-shrink: 0;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+
+  &__search-input {
+    flex: 1;
+    max-width: 377px;
+
+    @media (max-width: $tablet) {
+      max-width: 100%;
+    }
+  }
+
+  // Right side - Filter label and time period dropdown
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    @media (max-width: $desktop) {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    color: #727975;
+    white-space: nowrap;
+  }
+
+  &__time-select {
+    width: 150px;
+    flex-shrink: 0;
+
+    select {
+      color: #727975;
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../../../../../styles/variables";
+
+.add-policy-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0.5rem 0;
+
+  .form-field {
+    &__label {
+      display: block;
+      font-family: Inter, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.21;
+      text-transform: uppercase;
+      color: #000000;
+      margin-bottom: 0.5rem;
+      text-align: right;
+
+      [dir="ltr"] & {
+        text-align: left;
+      }
+    }
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+}

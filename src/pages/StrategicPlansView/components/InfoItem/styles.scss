@@ -1,0 +1,52 @@
+@import "../../../../styles/variables";
+
+.info-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  &__label {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.27em;
+    color: #9f9f9f;
+    text-transform: capitalize;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  &__value {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.21em;
+    text-transform: capitalize;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
+    border-radius: 4.75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
